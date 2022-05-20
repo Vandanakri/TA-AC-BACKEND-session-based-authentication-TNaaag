@@ -19,6 +19,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//create a middleware and set a cookie of your name and send it to browser.
+
+app.use((req,res,next) => {
+  //access cookies set on browser
+  console.log(req.cookies);
+  res.cookie('name', 'Vandana');
+  next();
+})
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
