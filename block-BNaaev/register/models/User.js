@@ -1,12 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var bcrypt = require('bcrypt')
 
 var userSchema = new Schema ({
   name: { type: String, require: true },
   email: { type: String, require: true, unique: true },
   password: { type: String, minlength: 5 },
   age: { type: Number, require: true },
-  phone: { type: Number, require: true },
+  phone: { type: Number,minlength: 10, maxlength: 13  },
 }, {timestamps: true});
 
 userSchema.pre('save', function (next) {
@@ -20,12 +21,6 @@ userSchema.pre('save', function (next) {
     next();
   }
 });
-
-userSchema.methods.verifyPassword = function (password, cb) {
-  bcrypt.compare(password, this.password, (err, result) => {
-    return cb(err, result);
-  });
-};
 
 
 module.exports = mongoose.model('User', userSchema);
