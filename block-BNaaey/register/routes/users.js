@@ -17,7 +17,7 @@ router.get("/register", (req, res, next) => {
 router.post("/register", (req, res, next) => {
   User.create(req.body, (err, user) => {
     if (err) return next(err);
-    res.redirect('login')
+    res.redirect('/users/login')
   })
 })
 
@@ -31,7 +31,7 @@ router.post('/login', (req, res, next) => {
   var { email, password } = req.body;
   // console.log(email, password)
   if (!email || !password) {
-    res.redirect('/users/login')
+   return res.redirect('/users')
   }
   User.findOne({ email }, (err, user) => {
     if (err) next(err);
