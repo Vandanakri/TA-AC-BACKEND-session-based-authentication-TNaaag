@@ -1,0 +1,223 @@
+ body {
+   /* padding: 50px; */
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ }
+
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+   display: block;
+ }
+
+ body {
+   line-height: 1;
+ }
+
+ ol,
+ ul {
+   list-style: none;
+ }
+
+ blockquote,
+ q {
+   quotes: none;
+ }
+
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+   content: '';
+   content: none;
+ }
+
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+ /* custom stylesheets */
+
+ .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: gray
+}
+
+a {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+
+ .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ a {
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: bolder;
+   margin-left: 5rem;
+ }
+
+ h1 {
+   text-align: center;
+   margin-top: 5rem;
+   color: hotpink;
+   font-size: 3rem;
+   font-weight: bold;
+ }
+
+ button{
+   color: white;
+   background-color: rgb(20, 146, 20);
+   border: none;
+   font-size: 1.5rem;
+   border-radius: 5px;
+   font-weight: bold;
+   margin-top: 2rem;
+   margin-right: 5rem;
+ }
+
+ h2{
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 2rem;
+   color: blueviolet;
+ }
+
+ .form{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2rem;
+ }
+
+ .form input {
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+  padding-left: 0.25rem;
+}
+.btn {
+  text-align: center;
+}
+.err{
+  color: red;
+}
