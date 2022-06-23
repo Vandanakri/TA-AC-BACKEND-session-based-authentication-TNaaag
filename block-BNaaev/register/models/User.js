@@ -6,8 +6,6 @@ var userSchema = new Schema ({
   name: { type: String, require: true },
   email: { type: String, require: true, unique: true },
   password: { type: String, minlength: 5 },
-  age: { type: Number, require: true },
-  phone: { type: Number,minlength: 10, maxlength: 13  },
 }, {timestamps: true});
 
 userSchema.pre('save', function (next) {
