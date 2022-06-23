@@ -9,7 +9,7 @@
       <nav class="flex justify-content align-items container">
         <ul>
           <li>
-            <a href="/users/login">Blogs</a>
+            <a href="/">Blogs</a>
           </li>
         </ul>
         <ul class="flex login">
@@ -24,6 +24,18 @@
     </header>
     <main class="container">
       <h1>Welcome to our website to read all the blogs.</h1>
+      <div class="flex justify-content align-items wrap">
+        <% blog.forEach((b) => { %>
+        <div class="blog">
+          <p>Title: <%= b.title %></p>
+          <p>Description: <%= b.description %></p>
+          <p>Author: <%= b.author %></p>
+          <a href="/blogs/<%= b.slug%>">
+            <button>Read More</button>
+          </a>
+        </div>
+        <% })%>
+      </div>
     </main>
   </body>
 </html>
