@@ -7,7 +7,10 @@
   <body>
     <header class="header">
       <nav class="flex justify-content align-items container">
-        <ul>
+        <ul class="flex">
+          <li>
+            <a href="/">Home</a>
+          </li>
           <li>
             <a href="/users/login">Blogs</a>
           </li>
@@ -23,7 +26,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Welcome to Register Page</h1>
+      <h1>Welcome to Login Page</h1>
       <div class="register">
         <form action="/users/login" method="post">
           <% if(error) { %>

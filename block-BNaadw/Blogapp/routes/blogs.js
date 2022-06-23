@@ -16,7 +16,6 @@ router.get('/new', (req, res, next) => {
 
 router.post('/new', (req, res, next) => {
   Blog.create(req.body, (err, blog) => {
-    console.log(blog);
     res.redirect('/blogs');
   });
 });
@@ -38,7 +37,6 @@ router.get('/:slug', (req, res, next) => {
     .populate('comments')
     .exec((err, blog) => {
       if (err) return next(err);
-      // console.log(blog);
       res.render('blogDetail', { blog });
     });
 });
