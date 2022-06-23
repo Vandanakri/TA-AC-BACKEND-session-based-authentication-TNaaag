@@ -3,9 +3,6 @@
    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
  }
 
- a {
-   color: #00B7FF;
- }
 
  /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -144,6 +141,27 @@
  }
 
  /* custom stylesheets */
+
+ .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: gray
+}
+
+a {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
 
  .header {
    display: flex;
